@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulation Nancy - Vélos, Pollution, Météo</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Circulation Nancy</h1>
+            <p>Vélos partagés, qualité de l'air et météo en temps réel</p>
+        </header>
+        
+        <div class="info-panel">
+            <div class="info-card">
+                <h3>Localisation</h3>
+                <div id="location" class="value">Chargement...</div>
+            </div>
+            
+            <div class="info-card">
+                <h3>Température</h3>
+                <div id="temperature" class="value">-</div>
+            </div>
+            
+            <div class="info-card">
+                <h3>Vent</h3>
+                <div id="wind" class="value">-</div>
+            </div>
+            
+            <div class="info-card">
+                <h3>Pluie</h3>
+                <div id="rain" class="value">-</div>
+            </div>
+            
+            <div class="info-card">
+                <h3>Qualité de l'air</h3>
+                <div id="air-quality" class="air-quality">
+                    <span class="air-icon">-</span>
+                    <span class="value">-</span>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <h3>Vélos disponibles</h3>
+                <div id="bikes-available" class="value">-</div>
+            </div>
+        </div>
+        
+        <div class="map-container">
+            <h2>Carte des stations VélOstan</h2>
+            <div id="map"></div>
+        </div>
+        
+        <footer style="margin-top: 30px; padding: 15px; text-align: center; color: #666; font-size: 0.9em;">
+            <p>Sources : <a href="https://ipapi.co" target="_blank">ipapi.co</a> | <a href="https://api.cyclocity.fr" target="_blank">Cyclocity</a> | <a href="https://www.atmo-grandest.eu" target="_blank">Atmo Grand Est</a> | <a href="https://open-meteo.com" target="_blank">Open-Meteo</a> | <a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a></p>
+        </footer>
+    </div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
+

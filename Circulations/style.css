@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.info-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.info-card h3 {
+    color: blue;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.info-card .value {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.air-quality {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.air-icon {
+    font-size: 2em;
+}
+
+.map-container {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.map-container h2 {
+    margin-bottom: 15px;
+    color: blue;
+}
+
+#map {
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: darkblue;
+}
+
+.error {
+    background-color: white;
+    color: red;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
