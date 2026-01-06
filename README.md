@@ -75,9 +75,4 @@ Interop/
 
 ## 👤 Auteur
 
-Arman4498
-
-## 📄 Licence
-
-Ce projet est fourni tel quel à des fins éducatives.
-
+Arman Hayrapetyan
